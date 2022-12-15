@@ -9,7 +9,7 @@ def landing_page():
     return render_template('index.html')
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=1991, debug=True)
-
+    
 #Trozo 3
 @app.route("/dashboard")
 def dashboard():
@@ -17,3 +17,4 @@ def dashboard():
 @app.route("/map")
 def map():
     return render_template('map.html')
+
